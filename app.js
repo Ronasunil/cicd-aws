@@ -11,10 +11,10 @@ app.listen(process.env.PORT, () => {
   console.log("Server listening on port 2000");
 });
 
-app.use("/", (req, res) => {
-  res.status(200).json({ message: "Hellow" });
+app.use("/health", (req, res) => {
+  res.status(200).json({ message: "Hello healthy" });
 });
 
-app.use("/helath", (req, res) => {
-  res.status(200).json({ message: "Hello healthy" });
+app.use("/", (req, res) => {
+  res.status(200).json({ message: "Hellow" });
 });
