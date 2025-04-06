@@ -12,7 +12,7 @@ app.listen(process.env.PORT, () => {
 });
 
 app.use("/health", (req, res) => {
-  res.status(200).json({ message: "Hello healthy" });
+  res.status(200).json({ message: "Hello healthyy" });
 });
 
 app.use("/", (req, res) => {
